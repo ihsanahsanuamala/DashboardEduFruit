@@ -65,11 +65,11 @@
                 <i class="bi bi-person-fill"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
+                <li><a class="dropdown-item" href="#"> <i class="bi bi-box-arrow-right"></i>Logout</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                <!-- <li>
                   <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -189,20 +189,56 @@
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
             <li>
               <div class="text-muted small fw-bold  px-3 mb-3">
-                Laporan dan Penambahan Data
+                Penambahan Data
               </div>
             </li>
-            <li>
+            <!-- <li>
               <a href="#" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-book"></i></span>
                 <span>Laporan</span>
               </a>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <a href="#" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-bookmark-star"></i></span>
                 <span>Form</span>
               </a>
+            </li> -->
+            <li>
+              <a
+                class="nav-link px-3 sidebar-link"
+                data-bs-toggle="collapse"
+                href="#form"
+              >
+                <span class="me-2"><i class="bi bi-bookmark-star"></i></span>
+                <span>Form</span>
+                <span class="ms-auto">
+                  <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </span>
+              </a>
+              <div class="collapse" id="form">
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-bookmark-star"></i
+                      ></span>
+                      <span>Input Data Penjual</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-bookmark-star"></i
+                      ></span>
+                      <span>Input Data Pengunjung</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
             </li>
           </ul>
         </nav>
@@ -223,7 +259,7 @@
           </div>
           <div class="row">
             <div class="col-md-3 mb-3">
-              <div class="card bg-primary text-white h-100">
+              <div class="card bg-dark text-white h-100">
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Keuangan</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum dicta, consequuntur optio labore eius! Molestiae eligendi perferendis expedita odit debitis fugiat deserunt vitae placeat nam repellat tenetur, autem quis.</p>
@@ -237,7 +273,7 @@
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="card bg-primary text-white h-100">
+              <div class="card bg-dark text-white h-100">
                 <!-- <!-- <div class="card-body py-5">Warning Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Organisasi</h4>
@@ -251,7 +287,7 @@
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="card bg-success text-white h-100">
+              <div class="card bg-dark text-white h-100">
                 <!-- <div class="card-body py-5">Success Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Trend Terbaru</h4>
@@ -267,7 +303,7 @@
               </div>
             </div>
             <div class="col-md-3 mb-3">
-              <div class="card bg-success text-white h-100">
+              <div class="card bg-dark text-white h-100">
                 <!-- <div class="card-body py-5">Danger Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Pelanggan & Penjual</h4>
@@ -434,9 +470,75 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
+        <section id="form-data">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title">Form</h2>
+            </div>
+          </div>
+
+          <!--Form Input Data Penjual -->
+          <div class="registration-form">
+            <form>
+                <div class="header"><h4>Input Data Penjual</h4></div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="idPenjual" placeholder="Id Penjual">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="nama" placeholder="Nama Penjual">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="toko" placeholder="Toko Penjual">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="email" placeholder="Email Penjual">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-block create-account">Submit</button>
+                </div>
+            </form>
+        </div>
+
+          <!--Form Input Data Pembeli-->
+          <div class="registration-form">
+            <form>
+                <div class="header"><h4>Input Data Pembeli</h4></div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="idPembeli" placeholder="Id Pembeli">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="nama" placeholder="Nama Pembeli"> 
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="toko" placeholder="Buah Favorit">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="email" placeholder="Email Pembeli">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-block create-account">Submit</button>
+                </div>
+            </form>
+        </div>
+        </section>
+        <footer>
+          <div class="footer-content">
+              <h3>Edu Fruit</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy;2021 Ihsan Ahsanu Amala. powerered by <span id="powered"><a href="https://www.gamelab.id/">Gamelab</a></span></p>
+          </div>
+      </footer>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>

@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body,
 button {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* :root {
@@ -9,21 +10,24 @@ button {
   --topNavbarHeight: 56px;
 } */
 
+
+/* Navbar */
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+/* Sidebar */
+
 .sidebar-nav {
   /* width: var(--offcanvas-width); */
   width: 270px;
+  padding-top: 40px;
+
 }
 .sidebar-link {
   display: flex;
   align-items: center;
-}
-.sidebar-link .right-icon {
-  display: inline-flex;
-}
-
-
-.sidebar-link[aria-expanded="true"] .right-icon {
-  transform: rotate(180deg);
 }
 
 
@@ -43,12 +47,27 @@ button {
     -webkit-transform: none;
     transform: none;
     visibility: visible !important;
-    /* height: calc(100% - var(--topNavbarHeight)); */
-    /* top: var(--topNavbarHeight); */
     top: 56px;
   }
 }
 
-/* Tabel */
+.title{
+  background: rgb(32, 31, 32);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 15px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-align: start;
+  display: table;
+  font-weight: 700;
+  color: #fff;
+}
 
 
+
+.chart-container {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}

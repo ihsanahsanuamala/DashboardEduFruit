@@ -66,10 +66,6 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#"> <i class="bi bi-box-arrow-right"></i>Logout</a></li>
-                <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
-                <!-- <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li> -->
               </ul>
             </li>
           </ul>
@@ -87,36 +83,78 @@
       <div class="offcanvas-body p-0">
         <nav class="navbar-dark">
           <ul class="navbar-nav">
+            <!-- Halaman Utama -->
             <li>
               <div class="text-muted small fw-bold  px-3">
                 Halaman Utama
               </div>
             </li>
+            <!-- Laporan Utama -->
             <li>
-              <a href="#card" class="nav-link px-3 active">
+              <a href="index.html" class="nav-link px-3 active">
                 <span class="me-2"><i class="bi bi-book"></i></span>
                 <span>Laporan Utama</span>
               </a>
             </li>
+
+            <!-- Menu Chart -->
+            <li>
+              <a
+                class="nav-link px-3 sidebar-link"
+                data-bs-toggle="collapse"
+                href="index.html"
+              >
+                <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                <span>Bussines Insight</span>
+                <!-- <span class="ms-auto">
+                  <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </span> -->
+              </a>
+              <div class="collapse" id="chart">
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-graph-up"></i
+                      ></span>
+                      <span>Grafik Penjualan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-graph-down"></i
+                      ></span>
+                      <span>Grafik Pengunjung</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+
+            <!-- Data Pengguna -->
             <li>
               <div class="text-muted small fw-bold  px-3 mb-3">
-                Data Pengguna dan Business Insight
+                <!-- <a href="">Data Pengguna</a> -->
+                Data Pengguna
               </div>
             </li>
             <li>
               <a
                 class="nav-link px-3 sidebar-link"
-                data-bs-toggle="collapse"
-                href="#tabel"
+                
+                href="dataPengguna.html"
               >
                 <span class="me-2"><i class="bi bi-layout-split"></i></span>
                 <span>Data Pengguna</span>
-                <span class="ms-auto">
+                <!-- <span class="ms-auto">
                   <span class="right-icon">
                     <i class="bi bi-chevron-down"></i>
                   </span>
-                </span>
+                </span> -->
               </a>
               <div class="collapse" id="tabel">
                 <ul class="navbar-nav ps-3">
@@ -139,84 +177,27 @@
                 </ul>
               </div>
             </li>
-
-            <!-- Menu Chart -->
-            <li>
-              <a
-                class="nav-link px-3 sidebar-link"
-                data-bs-toggle="collapse"
-                href="#chart"
-              >
-                <span class="me-2"><i class="bi bi-graph-up"></i></span>
-                <span>Bussines Insight</span>
-                <span class="ms-auto">
-                  <span class="right-icon">
-                    <i class="bi bi-chevron-down"></i>
-                  </span>
-                </span>
-              </a>
-              <div class="collapse" id="chart">
-                <ul class="navbar-nav ps-3">
-                  <li>
-                    <a href="#" class="nav-link px-3">
-                      <span class="me-2"
-                        ><i class="bi bi-graph-up"></i
-                      ></span>
-                      <span>Grafik Penjualan</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link px-3">
-                      <span class="me-2"
-                        ><i class="bi bi-graph-down"></i
-                      ></span>
-                      <span>Grafik Pengunjung</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              
-            </li>
-<!--             
-            <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-graph-up"></i></span>
-                <span>Chart</span>
-              </a>
-            </li> -->
-
-
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+
+            <!-- Penambahan Data -->
             <li>
               <div class="text-muted small fw-bold  px-3 mb-3">
                 Penambahan Data
               </div>
             </li>
-            <!-- <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-book"></i></span>
-                <span>Laporan</span>
-              </a>
-            </li> -->
-            <!-- <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-bookmark-star"></i></span>
-                <span>Form</span>
-              </a>
-            </li> -->
             <li>
               <a
                 class="nav-link px-3 sidebar-link"
-                data-bs-toggle="collapse"
-                href="#form"
+               
+                href="form.html"
               >
                 <span class="me-2"><i class="bi bi-bookmark-star"></i></span>
                 <span>Form</span>
                 <span class="ms-auto">
-                  <span class="right-icon">
+                  <!-- <span class="right-icon">
                     <i class="bi bi-chevron-down"></i>
                   </span>
-                </span>
+                </span> -->
               </a>
               <div class="collapse" id="form">
                 <ul class="navbar-nav ps-3">
@@ -238,7 +219,6 @@
                   </li>
                 </ul>
               </div>
-
             </li>
           </ul>
         </nav>
@@ -274,7 +254,6 @@
             </div>
             <div class="col-md-3 mb-3">
               <div class="card bg-dark text-white h-100">
-                <!-- <!-- <div class="card-body py-5">Warning Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Organisasi</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum dicta, consequuntur optio labore eius! Molestiae eligendi perferendis expedita odit debitis fugiat deserunt vitae placeat nam repellat tenetur, autem quis.</p>
@@ -288,7 +267,6 @@
             </div>
             <div class="col-md-3 mb-3">
               <div class="card bg-dark text-white h-100">
-                <!-- <div class="card-body py-5">Success Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Trend Terbaru</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum dicta, consequuntur optio labore eius! Molestiae eligendi perferendis expedita odit debitis fugiat deserunt vitae placeat nam repellat tenetur, autem quis.</p>
@@ -304,7 +282,6 @@
             </div>
             <div class="col-md-3 mb-3">
               <div class="card bg-dark text-white h-100">
-                <!-- <div class="card-body py-5">Danger Card</div> -->
                 <div class="card-body py-5">
                   <h4 class="fw-bold">Pelanggan & Penjual</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum dicta, consequuntur optio labore eius! Molestiae eligendi perferendis expedita odit debitis fugiat deserunt vitae placeat nam repellat tenetur, autem quis.</p>
@@ -320,15 +297,49 @@
           </div>
         </section>  
 
-        <!-- Section Kedua Tabel -->
-        <section id="table">
+        <!-- Section Kedua Business Insight -->
+        <section id="graph">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title">Business Insight</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-header">
+                  <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                  Grafik Penjualan
+                </div>
+                <div class="card-body">
+                  <canvas id="semut" width="400" height="200"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-header">
+                  <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                  Grafik Pengunjung
+                </div>
+                <div class="card-body">
+                  <canvas id="rambutan" width="400" height="200"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Ketiga Tabel Data Pengguna-->
+        <!-- <section id="table">
           <div class="row">
             <div class="col-md-12">
               <h2 class="title">Data Pengguna</h2>
             </div>
-          </div>
+          </div> -->
           <!-- Data Penjual -->
-          <div class="row justify-content-start mt-4">
+          <!-- <div class="row justify-content-start mt-4">
             <div class="col-md-12 text-start mb-2">
               <h3 class="heading-section ">Data Penjual</h3>
             </div>
@@ -381,9 +392,9 @@
                 </table>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Data Pembeli -->
-          <div class="row justify-content-start">
+          <!-- <div class="row justify-content-start">
             <div class="col-md-12 text-start mb-2">
               <h3 class="heading-section mt-4">Data Pembeli</h3>
             </div>
@@ -436,51 +447,21 @@
                 </table>
               </div>
             </div>
-          </div>
-        </section>
+          </div> 
+        </section> -->
 
-        <section id="graph">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="title">Business Insight</h2>
-            </div>
-          </div>
+        
 
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <div class="card h-100">
-                <div class="card-header">
-                  <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                  Grafik Penjualan
-                </div>
-                <div class="card-body">
-                  <canvas id="semut" width="400" height="200"></canvas>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <div class="card h-100">
-                <div class="card-header">
-                  <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                  Grafik Pengunjung
-                </div>
-                <div class="card-body">
-                  <canvas id="rambutan" width="400" height="200"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="form-data">
+        <!-- Section Form -->
+        <!-- <section id="form-data">
           <div class="row">
             <div class="col-md-12">
               <h2 class="title">Form</h2>
             </div>
-          </div>
+          </div> -->
 
           <!--Form Input Data Penjual -->
-          <div class="registration-form">
+          <!-- <div class="registration-form">
             <form>
                 <div class="header"><h4>Input Data Penjual</h4></div>
                 <div class="form-group">
@@ -499,10 +480,10 @@
                     <button type="button" class="btn btn-block create-account">Submit</button>
                 </div>
             </form>
-        </div>
+          </div> -->
 
           <!--Form Input Data Pembeli-->
-          <div class="registration-form">
+          <!-- <div class="registration-form">
             <form>
                 <div class="header"><h4>Input Data Pembeli</h4></div>
                 <div class="form-group">
@@ -521,8 +502,10 @@
                     <button type="button" class="btn btn-block create-account">Submit</button>
                 </div>
             </form>
-        </div>
-        </section>
+          </div> 
+        </section> -->
+
+        <!-- Footer -->
         <footer>
           <div class="footer-content">
               <h3>Edu Fruit</h3>
